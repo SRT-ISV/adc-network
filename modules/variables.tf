@@ -13,7 +13,7 @@ variable "region" {
 variable "vpc_name" {
   description = "Name of the custom VPC"
   type        = string
-  default     = "vpc1"
+  default     = "hardend-vpc"
 }
 
 variable "subnet_config" {
@@ -24,6 +24,7 @@ variable "subnet_config" {
   }))
   default = {
     "secure-subnet" = { region = "us-central1", ip_range = "10.0.0.0/24" }
+    "external-subnet" = { region = "us-central1", ip_range = "10.1.0.0/24" }
   }
 }
 
