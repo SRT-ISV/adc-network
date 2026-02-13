@@ -13,7 +13,7 @@ variable "region" {
 variable "vpc_name" {
   description = "Name of the custom VPC"
   type        = string
-  default     = "vpc1"
+  default     = "hardend-vpc"
 }
 
 variable "firewall_source_string" {
